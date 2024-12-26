@@ -7,6 +7,9 @@ global using Microsoft.Extensions.Caching.Distributed;
 global using System.Text.Json;
 global using BuildingBlocks.Behaviors;
 global using Carter;
+global using Mapster;
+global using MediatR;
+
 
 
 
