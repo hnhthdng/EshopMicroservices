@@ -1,6 +1,16 @@
-﻿namespace Ordering.API
+﻿namespace Ordering.API;
+
+public static class DependencyInjection
 {
-    public class DependencyInjection
+    public static IServiceCollection AddApiServices(this IServiceCollection services, IConfiguration configuration)
     {
+        
+        return services;
+    }
+
+    public static WebApplication UseApiServices(this WebApplication app)
+    {
+       
+        return app;
     }
 }
