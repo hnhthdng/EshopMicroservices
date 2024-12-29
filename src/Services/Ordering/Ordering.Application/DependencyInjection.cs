@@ -1,6 +1,7 @@
 ﻿using BuildingBlocks.Behaviors;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Ordering.Application.Data;
 using System.Reflection;
 
 namespace Ordering.Application;
@@ -15,6 +16,7 @@ public static class DependencyInjection
             config.AddOpenBehavior(typeof(ValidationBehavior<,>));
             config.AddOpenBehavior(typeof(LoggingBehavior<,>));
         });
+
         return services;
     }
 }
