@@ -14,6 +14,7 @@
     <PackageReference Include="Carter" Version="8.0.0" />
     <PackageReference Include="Grpc.AspNetCore" Version="2.49.0" />
     <PackageReference Include="Marten" Version="7.34.1" />
+    <PackageReference Include="MassTransit" Version="8.3.4" />
     <PackageReference Include="Microsoft.Extensions.Caching.StackExchangeRedis" Version="9.0.0" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.19.6" />
     <PackageReference Include="Scrutor" Version="5.1.0" />
@@ -21,11 +22,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Basket\CheckoutBasket\" />
-    <Folder Include="Dtos\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\..\..\BuildingBlocks\BuildingBlocks.Messaging\BuildingBlocks.Messaging.csproj" />
     <ProjectReference Include="..\..\..\BuildingBlocks\BuildingBlocks\BuildingBlocks.csproj" />
   </ItemGroup>
 
